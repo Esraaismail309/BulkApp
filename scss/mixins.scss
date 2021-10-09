@@ -1,0 +1,17 @@
+@mixin typoStyle($font, $size:14px, $weight:400) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $size * 1.618;
+}
+
+@mixin background-image($filePath, $bgXpos:0, $bgYpos:0, $bgReapeat:no-repeat, $bgSize:cover) {
+    background-image: url($filePath);
+    background-position: $bgXpos $bgYpos;
+    background-repeat: $bgReapeat;
+    background-size: $bgSize;
+}
+
+@mixin linearGradient($direction, $startColor, $endColor) {
+    background-image: linear-gradient($direction, $startColor, $endColor);
+}

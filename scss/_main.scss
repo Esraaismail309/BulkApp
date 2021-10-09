@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+body {
+    @include typoStyle($openFont);
+    %btn {
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+    p {
+        color: $textColor;
+        line-height: 1.6;
+    }
+    header {
+        height: 100vh;
+        @include background-image($mainBg,
+        center,
+        center,
+        no-repeat,
+        cover);
+        .nav-link {
+            color: $white !important;
+        }
+        .main_header button {
+            @extend %btn;
+            background-color: $white;
+        }
+    }
+    .arch {
+        background-color: $bgColor;
+        a {
+            @extend %btn;
+            @include linearGradient(to right,
+            $startGradient,
+            $endGradient)
+        }
+    }
+    .beauty {
+        a {
+            @extend %btn;
+            @include linearGradient(to right,
+            $startGradient,
+            $endGradient)
+        }
+    }
+    .pricing {
+        ul li a {
+            @extend %btn;
+            background-color: $bgColor;
+            color: $black;
+        }
+    }
+    .apps {
+        @include linearGradient(to right,
+        $startGradient,
+        $endGradient)
+    }
+    footer {
+        background-color: $footerBg;
+        li {
+            padding-top: 1rem;
+            color: $textColor;
+        }
+        input {
+            margin-top: 1rem;
+            width: 90%;
+            padding: 0.5rem;
+            border-radius: 30px;
+        }
+        a {
+            @include linearGradient(to right,
+            $startGradient,
+            $endGradient);
+            padding: 0.77rem 2rem;
+            border-radius: 30px;
+            margin-left: -8.9rem
+        }
+    }
+    @media screen and (max-width:576px) {
+        header {
+            .header__content {
+                width: 90%;
+                order: 2;
+                text-align: center;
+                button {
+                    margin-top: 0;
+                    padding: 0.6rem 1.3rem;
+                }
+            }
+            figure {
+                order: 1;
+                width: 35% !important;
+                margin: auto;
+            }
+        }
+        .video {
+            .layer {
+                top: 26%;
+                left: 43%;
+            }
+        }
+        .apps {
+            p {
+                width: 100% !important;
+            }
+        }
+    }
+    @media screen and (min-width:577px) {
+        .video {
+            .layer {
+                top: 34%;
+                left: 45%;
+            }
+        }
+    }
+}

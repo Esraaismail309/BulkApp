@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.652px; }
+  body header .main_header button, body .arch a, body .beauty a, body .pricing ul li a {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    margin-top: 20px; }
+  body a {
+    color: #fff;
+    text-decoration: none; }
+  body p {
+    color: #6c757d;
+    line-height: 1.6; }
+  body header {
+    height: 100vh;
+    background-image: url("../assets/img/banner/home-banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body header .nav-link {
+      color: #fff !important; }
+    body header .main_header button {
+      background-color: #fff; }
+  body .arch {
+    background-color: #f9faff; }
+    body .arch a {
+      background-image: linear-gradient(to right, #b52eff, #7e44fb); }
+  body .beauty a {
+    background-image: linear-gradient(to right, #b52eff, #7e44fb); }
+  body .pricing ul li a {
+    background-color: #f9faff;
+    color: #000; }
+  body .apps {
+    background-image: linear-gradient(to right, #b52eff, #7e44fb); }
+  body footer {
+    background-color: #212121; }
+    body footer li {
+      padding-top: 1rem;
+      color: #6c757d; }
+    body footer input {
+      margin-top: 1rem;
+      width: 90%;
+      padding: 0.5rem;
+      border-radius: 30px; }
+    body footer a {
+      background-image: linear-gradient(to right, #b52eff, #7e44fb);
+      padding: 0.77rem 2rem;
+      border-radius: 30px;
+      margin-left: -8.9rem; }
+  @media screen and (max-width: 576px) {
+    body header .header__content {
+      width: 90%;
+      order: 2;
+      text-align: center; }
+      body header .header__content button {
+        margin-top: 0;
+        padding: 0.6rem 1.3rem; }
+    body header figure {
+      order: 1;
+      width: 35% !important;
+      margin: auto; }
+    body .video .layer {
+      top: 26%;
+      left: 43%; }
+    body .apps p {
+      width: 100% !important; } }
+  @media screen and (min-width: 577px) {
+    body .video .layer {
+      top: 34%;
+      left: 45%; } }
